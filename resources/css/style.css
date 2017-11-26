@@ -1,5 +1,14 @@
-*{
+*{ /*This would remove space in margins and padding. We can set the sze of elements*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html{
+    background-color: white;
+    color: #555; /*Text color*/
+    font-family: 'lato','arial',sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
 }
