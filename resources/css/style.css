@@ -1,4 +1,4 @@
-*{ /*This would remove space in margins and padding. We can set the sze of elements*/
+*{ /*This would remove space in margins and padding. We can set the size of elements*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,4 +16,24 @@ html{
 .row{
     max-width: 1140px;
     margin: 0 auto 0 auto;
+}
+
+header{
+    /*background-image: url(img/hero.jpg);*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/hero.jpg);/*This would add color on top and bottom of image*/
+    height: 100vh;/*The header is displayed on the 100% viewport*/
+    background-size: cover; /*The background image fits completely in header*/
+    background-position: center; /*When resizing the image the browser shrinks with respect to center*/
+}
+
+.hero-text-box{
+    position: absolute;/*This will position the element with respect to parent element*/
+    width: 1140px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);/*This will position the div 50% left and 50% top*/
+}
+
+h1{
+    margin: 0;/*The normalize css has  some margin. We are removing the margin*/
 }
