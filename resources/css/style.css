@@ -35,5 +35,32 @@ header{
 }
 
 h1{
-    margin: 0;/*The normalize css has  some margin. We are removing the margin*/
+    margin-top: 0px;
+    margin-bottom: 20px;
+    /*margin: 0;/*The normalize css has  some margin. We are removing the margin*/
+    color: #fff;
+    font-size: 240%; /*This is 240% of 20px we already defined in html class*/
+    font-weight: 300;
+    text-transform: uppercase;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+.btn{
+    display:inline-block;
+    padding: 10px 30px;/*This adds spaces between content and border 10px on top 30px right  10px bottom 30px right*/
+    font-weight: 300;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-full{
+    background-color: #e67e22;
+    border-radius: 200px;
+}
+
+.btn-ghost{
+    border: 1px #e67e22;
+    border-radius: 200px;
+    color: #e67e22;
 }
