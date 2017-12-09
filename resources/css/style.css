@@ -1,3 +1,7 @@
+/*-------------------------------------------*/
+/*BASIC SETUP*/
+/*-------------------------------------------*/
+
 *{ /*This would remove space in margins and padding. We can set the size of elements*/
     margin: 0;
     padding: 0;
@@ -13,25 +17,13 @@ html{
     text-rendering: optimizeLegibility;
 }
 
+/*-------------------------------------------*/
+/*REUSABLE COMPONENTS*/
+/*-------------------------------------------*/
+
 .row{
     max-width: 1140px;
     margin: 0 auto 0 auto;
-}
-
-header{
-    /*background-image: url(img/hero.jpg);*/
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/hero.jpg);/*This would add color on top and bottom of image*/
-    height: 100vh;/*The header is displayed on the 100% viewport*/
-    background-size: cover; /*The background image fits completely in header*/
-    background-position: center; /*When resizing the image the browser shrinks with respect to center*/
-}
-
-.hero-text-box{
-    position: absolute;/*This will position the element with respect to parent element*/
-    width: 1140px;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);/*This will position the div 50% left and 50% top*/
 }
 
 h1{
@@ -46,6 +38,9 @@ h1{
     letter-spacing: 1px;
 }
 
+/*-------------------------------------------*/
+/*BUTTONS*/
+/*-------------------------------------------*/
 .btn:link,
 .btn:visited {
     display:inline-block;
@@ -85,4 +80,58 @@ h1{
 .btn-ghost:active{
     border: 1px solid #cf6d17; /*This color is picked from 0to255.com*/
     color: #fff;
+}
+
+/*-------------------------------------------*/
+/*HEADER*/
+/*-------------------------------------------*/
+header{
+    /*background-image: url(img/hero.jpg);*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/hero.jpg);/*This would add color on top and bottom of image*/
+    height: 100vh;/*The header is displayed on the 100% viewport*/
+    background-size: cover; /*The background image fits completely in header*/
+    background-position: center; /*When resizing the image the browser shrinks with respect to center*/
+}
+
+.hero-text-box{
+    position: absolute;/*This will position the element with respect to parent element*/
+    width: 1140px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);/*This will position the div 50% left and 50% top*/
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;/*This moves the logo to left*/    
+    margin-top: 20px;
+}
+
+.main-nav{
+    float:right; /*This moves the logo to right*/
+    list-style: none; /*This will remove list symbols*/
+    margin-top: 55px;
+}
+
+.main-nav li{
+    display: inline-block; /*This will arrange elements in a line from left to right*/
+    margin-left: 40px;
+    
+}
+
+.main-nav li a:link, /*This will apply the style only to the links within list*/
+.main-nav li a:visited{
+    padding: 8px 0;
+    color:#fff;
+    text-decoration: none;    
+    text-transform: uppercase;
+    font-size: 90%; /*This is 90% of 20px we mentioned in style for html*/
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s; /*Border on bottom appears with 0.2 seconds delay*/
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #e67e22;
 }
