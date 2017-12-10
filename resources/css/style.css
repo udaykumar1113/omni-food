@@ -101,8 +101,20 @@ h2:after{
 }
 
 /*-------------------------------------------*/
+/*FEATURES*/
+/*-------------------------------------------*/
+
+.section-features .long-copy{
+    margin-bottom: 30px;
+}
+
+/*-------------------------------------------*/
 /*MEALS*/
 /*-------------------------------------------*/
+
+.section-meals{
+    padding: 0;
+}
 
 .meals-showcase{
     list-style: none;
@@ -116,12 +128,25 @@ h2:after{
 }
 
 .meal-photo{
+    background-color: #000; /*This would add black color to opacity image to make it a bit dark*/
     width: 100%;
     margin: 0;
+    overflow: hidden;/**This will hide overflow of image container*/
 }
 
 .meal-photo img{
+    opacity: 0.7; /*This will add little opacity to image*/
     width: 100%;
+    height: auto;
+    transform: scale(1.15);/*his will increase the size of photo by 15% and causes the size overflow on parent container. To resolve this we have overflow to be set*/
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo img:hover{
+    opacity: 1;
+    transform: scale(1.03); /*on hovering the photo goes back to normal size from 1.15*/
+    transition: transform 0.75s; /*This will delay hover effect by 0.75 seconds*/
+    
 }
 
 /*-------------------------------------------*/
