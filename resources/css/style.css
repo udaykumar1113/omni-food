@@ -302,3 +302,16 @@ header{
     widows: auto;
     margin-right: 10px;
 }
+
+/*-------------------------------------------*/
+/*Cities*/
+/*-------------------------------------------*/
+
+.box img{
+    width: 100%;
+    height: auto;
+}
+
+.city-feature{
+    margin-bottom: 10px;
+}
