@@ -181,7 +181,8 @@ a:active{
 /*BUTTONS*/
 /*-------------------------------------------*/
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit]{
     display:inline-block;
     padding: 10px 30px;/*This adds spaces between content and border 10px on top 30px right  10px bottom 30px right*/
     font-weight: 300;
@@ -191,7 +192,8 @@ a:active{
 }
 
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited,
+input[type=submit]{
     background-color: #e67e22;/*The color for button is picked from https://flatuicolors.com/*/
     border: 1px solid #e67e22;
     color: #fff;
@@ -205,7 +207,9 @@ a:active{
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
     background-color: #cf6d17;
 }
 
@@ -453,3 +457,32 @@ cite img{
 .plan-box ul li{
     padding: 5px 0;
 }
+
+/*-------------------------------------------*/
+/*Form*/
+/*-------------------------------------------*/
+
+.contact-form{
+    width:60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 150%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type=checkbox]{ /*Add space around checkbox*/
+    margin: 10px 5px 10px 0;
+}
+
+*:focus{outline:none} /*The will remove the highligiting around form elements*/
