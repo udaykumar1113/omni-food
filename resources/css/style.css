@@ -264,6 +264,14 @@ header{
     margin-top: 20px;
 }
 
+.logo-black{
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;/*This moves the logo to left*/    
+    margin: 5px 0;
+}
+
 .main-nav{
     float:right; /*This moves the logo to right*/
     list-style: none; /*This will remove list symbols*/
@@ -291,6 +299,34 @@ header{
 .main-nav li a:hover,
 .main-nav li a:active{
     border-bottom: 2px solid #e67e22;
+}
+
+/*Sticky Nav*/
+.sticky{
+    top: 0;
+    left: 0;
+    position: fixed; /*This will fix the navigation bar on top even if we scroll*/
+    width: 100%;
+    background-color: rgba(255,255,255,0.98);
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.main-nav{
+    margin-top: 18px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    padding: 16px 0;
+    color:#555;
+}
+
+.sticky .logo{ /*If the logo is placed inside sticky class then the image is hidden*/
+    display:none;
+}
+
+.sticky .logo-black{ /*If the logo-black is placed inside sticky logo-black is displayed */
+    display: block;
 }
 
 /*-------------------------------------------*/
